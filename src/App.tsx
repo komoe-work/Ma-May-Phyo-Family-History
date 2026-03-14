@@ -117,11 +117,11 @@ const App = () => {
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-100 text-amber-700 text-xs font-bold tracking-widest uppercase leading-loose">
                 <Sparkles className="w-3 h-3" /> အစဉ်အလာနှင့် ဦးဆောင်မှု
               </div>
-              <h1 className="text-5xl md:text-7xl font-black text-slate-900 leading-[1.6] md:leading-[1.5] mb-4">
+              <h1 className="text-5xl md:text-7xl font-semibold text-slate-900 mb-4 tracking-normal">
                 မျှော်မှန်းချက်ကြီးမားသော <br/> 
                 <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-600 bg-clip-text text-transparent">စီးပွားရေးလုပ်ငန်းရှင်</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto leading-[1.8] font-medium">
+              <p className="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto font-medium">
                 "ဘဝတွင် ရိုးသားမှု၊ ကြိုးစားမှုနှင့် ကူညီမှုဆိုသည့် မူဝါဒများကို အမြဲလိုက်နာလျက်ရှိသည်။"
               </p>
               
@@ -159,8 +159,8 @@ const App = () => {
                   <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center mb-8 group-hover:bg-amber-50 transition-colors">
                     {React.cloneElement(v.icon, { className: 'w-8 h-8' })}
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">{v.label}</h3>
-                  <p className="text-slate-500 leading-[1.8]">{v.text}</p>
+                  <h3 className="text-2xl font-semibold mb-4 tracking-normal">{v.label}</h3>
+                  <p className="text-slate-500">{v.text}</p>
                 </div>
               ))}
             </section>
@@ -168,7 +168,7 @@ const App = () => {
             {/* Timeline Section */}
             <section className="space-y-12">
               <div className="text-center space-y-4">
-                <h2 className="text-3xl md:text-4xl font-black">လုပ်ငန်းခွင် <span className="text-amber-600">ဖြတ်သန်းမှု</span></h2>
+                <h2 className="text-3xl md:text-4xl font-semibold tracking-normal">လုပ်ငန်းခွင် <span className="text-amber-600">ဖြတ်သန်းမှု</span></h2>
                 <p className="text-slate-500">အောင်မြင်မှုဆီသို့ လျှောက်လှမ်းခဲ့သော ခရီးစဉ်</p>
               </div>
               
@@ -189,9 +189,9 @@ const App = () => {
                             <div className="p-3 rounded-xl bg-slate-50">
                               {item.icon}
                             </div>
-                            <h4 className="text-xl font-bold">{item.title}</h4>
+                            <h4 className="text-xl font-semibold tracking-normal">{item.title}</h4>
                           </div>
-                          <p className="text-slate-500 leading-[1.8]">{item.desc}</p>
+                          <p className="text-slate-500">{item.desc}</p>
                         </div>
                       </div>
                       <div className="hidden md:block w-1/2"></div>
@@ -205,7 +205,7 @@ const App = () => {
             <section className="space-y-12">
                <div className="flex flex-col md:flex-row items-end justify-between gap-6">
                   <div className="space-y-4">
-                    <h2 className="text-3xl md:text-4xl font-black">လက်ရှိ <span className="text-amber-600">လုပ်ငန်းများ</span></h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold tracking-normal">လက်ရှိ <span className="text-amber-600">လုပ်ငန်းများ</span></h2>
                     <p className="text-slate-500">အောင်မြင်စွာ လည်ပတ်လျက်ရှိသော စီးပွားရေးလုပ်ငန်းများ</p>
                   </div>
                   <button className="flex items-center gap-2 text-amber-600 font-bold hover:gap-3 transition-all cursor-pointer">
@@ -222,7 +222,7 @@ const App = () => {
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-10 flex flex-col justify-end">
-                      <h3 className="text-3xl font-bold text-white mb-2">ရွှေလာဘ်စံ</h3>
+                      <h3 className="text-3xl font-semibold text-white mb-2 tracking-normal">ရွှေလာဘ်စံ</h3>
                       <p className="text-white/70 mb-6">အဆင့်မြင့် ရွှေထည်နှင့် ကျောက်မျက်ရတနာ အရောင်းဆိုင်</p>
                       <div className="flex gap-3">
                         <span className="px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold">ရတနာ</span>
@@ -239,7 +239,7 @@ const App = () => {
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-10 flex flex-col justify-end">
-                      <h3 className="text-3xl font-bold text-white mb-2">စက်ပစ္စည်းအရောင်းဆိုင်</h3>
+                      <h3 className="text-3xl font-semibold text-white mb-2 tracking-normal">စက်ပစ္စည်းအရောင်းဆိုင်</h3>
                       <p className="text-white/70 mb-6">အရည်အသွေးမြင့် စက်မှုလက်မှုသုံး စက်ကိရိယာများ</p>
                       <div className="flex gap-3">
                         <span className="px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold">စက်မှု</span>
@@ -260,11 +260,11 @@ const App = () => {
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-bold tracking-widest uppercase">
                 <GraduationCap className="w-3 h-3" /> ပညာရှာမှီးခြင်းနှင့် ဖွံ့ဖြိုးတိုးတက်မှု
               </div>
-              <h1 className="text-5xl md:text-7xl font-black text-slate-900 leading-[1.6] md:leading-[1.5] mb-4">
+              <h1 className="text-5xl md:text-7xl font-semibold text-slate-900 mb-4 tracking-normal">
                 စဉ်ဆက်မပြတ် <br/> 
                 <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-cyan-600 bg-clip-text text-transparent">လေ့လာသင်ယူသူ</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto leading-[1.8] font-medium">
+              <p className="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto font-medium">
                 "ပညာသည် ဘဝအတွက် အကောင်းဆုံး ရင်းနှီးမြှုပ်နှံမှု ဖြစ်သည်။"
               </p>
 
@@ -285,7 +285,7 @@ const App = () => {
                  </div>
                  <div className="flex flex-col justify-center text-left space-y-6 p-6">
                     <div className="space-y-2">
-                       <h3 className="text-3xl font-bold">ပညာရေးခရီးစဉ်</h3>
+                       <h3 className="text-3xl font-semibold tracking-normal">ပညာရေးခရီးစဉ်</h3>
                        <p className="text-slate-500">လက်ရှိတွင် ဆေးပညာရပ်များကို စိတ်အားထက်သန်စွာ လေ့လာလျက်ရှိသည်။</p>
                     </div>
                     <div className="space-y-4">
@@ -297,7 +297,7 @@ const App = () => {
                          <div key={i} className="flex items-start gap-4 p-4 rounded-2xl hover:bg-white hover:shadow-sm transition-all">
                             <div className="p-3 rounded-xl bg-slate-50">{item.icon}</div>
                             <div>
-                               <h4 className="font-bold">{item.label}</h4>
+                               <h4 className="font-semibold tracking-normal">{item.label}</h4>
                                <p className="text-sm text-slate-500">{item.desc}</p>
                             </div>
                          </div>
@@ -310,7 +310,7 @@ const App = () => {
             {/* Hobbies & Interests */}
             <section className="space-y-12">
                <div className="text-center space-y-4">
-                  <h2 className="text-3xl md:text-4xl font-black">ဝါသနာနှင့် <span className="text-blue-600">စိတ်ဝင်စားမှုများ</span></h2>
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-normal">ဝါသနာနှင့် <span className="text-blue-600">စိတ်ဝင်စားမှုများ</span></h2>
                   <p className="text-slate-500">အားလပ်ချိန်များတွင် ပြုလုပ်လေ့ရှိသော အရာများ</p>
                </div>
 
@@ -325,7 +325,7 @@ const App = () => {
                        <div className={`w-16 h-16 mx-auto rounded-2xl flex items-center justify-center ${hobby.color} group-hover:scale-110 transition-transform`}>
                           {React.cloneElement(hobby.icon as React.ReactElement, { className: 'w-8 h-8' })}
                        </div>
-                       <p className="font-bold text-slate-700">{hobby.label}</p>
+                       <p className="font-semibold text-slate-700 tracking-normal">{hobby.label}</p>
                     </div>
                   ))}
                </div>
@@ -338,7 +338,7 @@ const App = () => {
                   <div className="absolute bottom-10 right-10 w-64 h-64 bg-cyan-500 rounded-full blur-[100px]"></div>
                </div>
                <Quote className="w-16 h-16 text-blue-500/30 mx-auto mb-8" />
-               <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight max-w-4xl mx-auto italic">
+               <h2 className="text-3xl md:text-5xl font-semibold text-white max-w-4xl mx-auto italic tracking-normal">
                  "ပညာဆိုတာ ကမ္ဘာကြီးကို ပြောင်းလဲပစ်ဖို့ အသုံးပြုနိုင်တဲ့ အစွမ်းထက်ဆုံး လက်နက်တစ်ခုပဲ ဖြစ်ပါတယ်။"
                </h2>
                <div className="mt-12 flex items-center justify-center gap-4">
@@ -360,9 +360,9 @@ const App = () => {
                 <div className="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white">
                   <Star className="w-6 h-6 fill-current" />
                 </div>
-                <span className="text-xl font-black tracking-tight uppercase">Genesys <span className="text-amber-600">Legacy</span></span>
+                <span className="text-xl font-black tracking-tight uppercase leading-[1.6]">Genesys <span className="text-amber-600">Legacy</span></span>
               </div>
-              <p className="text-slate-500 max-w-sm leading-relaxed">
+              <p className="text-slate-500 max-w-sm leading-[1.8]">
                 ရိုးသားမှု၊ ကြိုးစားမှုနှင့် ကူညီမှုတို့ဖြင့် တည်ဆောက်ထားသော အနာဂတ်ခရီးစဉ်။
               </p>
               <div className="flex gap-4">
@@ -375,21 +375,21 @@ const App = () => {
             </div>
             
             <div className="space-y-6">
-              <h4 className="font-bold text-slate-900">ကဏ္ဍများ</h4>
+              <h4 className="font-bold text-slate-900 leading-[1.6]">ကဏ္ဍများ</h4>
               <ul className="space-y-4 text-slate-500">
-                <li><button onClick={() => setActiveTab('entrepreneur')} className="hover:text-amber-600 transition-colors cursor-pointer">လုပ်ငန်းရှင် ပရိုဖိုင်</button></li>
-                <li><button onClick={() => setActiveTab('student')} className="hover:text-blue-600 transition-colors cursor-pointer">ကျောင်းသား ပရိုဖိုင်</button></li>
-                <li><a href="#" className="hover:text-slate-900 transition-colors">လုပ်ငန်းများ</a></li>
-                <li><a href="#" className="hover:text-slate-900 transition-colors">ပညာရေး</a></li>
+                <li><button onClick={() => setActiveTab('entrepreneur')} className="hover:text-amber-600 transition-colors cursor-pointer leading-[1.6]">လုပ်ငန်းရှင် ပရိုဖိုင်</button></li>
+                <li><button onClick={() => setActiveTab('student')} className="hover:text-blue-600 transition-colors cursor-pointer leading-[1.6]">ကျောင်းသား ပရိုဖိုင်</button></li>
+                <li><a href="#" className="hover:text-slate-900 transition-colors leading-[1.6]">လုပ်ငန်းများ</a></li>
+                <li><a href="#" className="hover:text-slate-900 transition-colors leading-[1.6]">ပညာရေး</a></li>
               </ul>
             </div>
 
             <div className="space-y-6">
-              <h4 className="font-bold text-slate-900">ဆက်သွယ်ရန်</h4>
+              <h4 className="font-bold text-slate-900 leading-[1.6]">ဆက်သွယ်ရန်</h4>
               <ul className="space-y-4 text-slate-500">
-                <li className="flex items-center gap-3"><Mail className="w-4 h-4" /> info@genesyslegacy.com</li>
-                <li className="flex items-center gap-3"><Phone className="w-4 h-4" /> +၉၅ ၉...</li>
-                <li className="flex items-center gap-3"><MapPin className="w-4 h-4" /> မန္တလေးမြို့</li>
+                <li className="flex items-center gap-3 leading-[1.6]"><Mail className="w-4 h-4" /> info@genesyslegacy.com</li>
+                <li className="flex items-center gap-3 leading-[1.6]"><Phone className="w-4 h-4" /> +၉၅ ၉...</li>
+                <li className="flex items-center gap-3 leading-[1.6]"><MapPin className="w-4 h-4" /> မန္တလေးမြို့</li>
               </ul>
             </div>
           </div>
